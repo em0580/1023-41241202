@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>磚塊破壞遊戲</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 引入 CSS 文件 -->
+</head>
+<body>
+    <h1>磚塊破壞遊戲</h1>
+    <div id="score">分數: 0</div>
+    <div id="lives">生命: 3</div>
+    <div id="levelButtons">
+        <button class="levelButton" data-level="0">簡單</button>
+        <button class="levelButton" data-level="1">中等</button>
+        <button class="levelButton" data-level="2">困難</button>
+    
+        <label for="backgroundSelector">選擇背景:
+            <select id="backgroundSelector">
+                <option value="none">請選擇</option>
+                <option value="image1">日本</option>
+                <option value="image2">韓國</option>
+                <option value="image3">台灣</option>
+            </select></label>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    <button id="restartButton">重新開始</button>
+
+    <script src="script.js"></script> <!-- 將你的 JavaScript 代碼保存在 game.js 中 -->
+</body>
+</html>
